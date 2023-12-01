@@ -85,5 +85,160 @@ public class Main {
         boolean l3 = !(Logical == 1 && Logical2 == 2);
 
 
+        //============ String ============//
+        String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        System.out.println("The length of the txt string is: " + txt.length());
+
+        String txt2 = "Hello World";
+
+        System.out.println(txt2.toUpperCase());   // Outputs "HELLO WORLD"
+        System.out.println(txt2.toLowerCase());   // Outputs "hello world"
+
+        String txt3 = "Please locate where 'locate' occurs!";
+        System.out.println(txt3.indexOf("locate")); // Outputs 7
+
+        String firstName = "John";
+        String lastName = "Doe";
+        System.out.println(firstName + " " + lastName);
+        System.out.println(firstName.concat(lastName));
+
+        String x = "10";
+        String y = "20";
+        String z = x + y;  // z will be 1020 (a String)
+
+        String x1 = "10";
+        int y1 = 20;
+        String z1 = x + y;  // z will be 1020 (a String)
+
+        //============ Strings - Special Characters ============//
+
+        String SpecialCharacters = "We are the so-called \"Vikings\" from the north.";
+
+        //============ Math ============//
+
+        int max1 = Math.max(5, 10);
+        int min1 = Math.min(5, 10);
+        double sqrt = Math.sqrt(64);
+        int abs1 = Math.abs(1);
+        double ran1 = Math.random();
+        int ran2 = (int)(Math.random() * 101);  // 0 to 100
+
+        //============ If/else Statements ============//
+
+        if (20 > 18) {
+            System.out.println("20 is greater than 18");
+        }
+
+
+        int time = 20;
+        String result = (time < 18) ? "Good day." : "Good evening.";
+        System.out.println(result);
+
+
+        //============ Switch Statements ============//
+
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+        }
+
+
+        //============ While Loop ============//
+
+        int loop = 0;
+        while (loop < 5) {
+            System.out.println(loop);
+            loop++;
+        }
+
+        int doLoop = 0;
+        do {
+            System.out.println(doLoop);
+            doLoop++;
+        }
+        while (doLoop < 5);
+
+
+        //============ For Loop ============//
+
+
+        for (int fl = 0; fl < 5; fl++) {
+            System.out.println(fl);
+        }
+
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String i : cars) {
+            System.out.println(i);
+        }
+
+        //============ For Loop - Break ============//
+
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
+        }
+
+
+        //============ Array ============//
+
+        String[] arrCars = {"Volvo", "BMW", "Ford", "Mazda"};
+        System.out.println(arrCars[0]);
+
+        for (int i = 0; i < arrCars.length; i++) {
+            System.out.println(arrCars[i]);
+        }
+
+        for (String i : arrCars) {
+            System.out.println(i);
+        }
+
+        // break
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
+        }
+
+        // continue
+
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                continue;
+            }
+            System.out.println(i);
+        }
+
+
+        //============ Multi-Dimensional Arrays ============//
+
+        int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+        for (int i = 0; i < myNumbers.length; ++i) {
+            for(int j = 0; j < myNumbers[i].length; ++j) {
+                System.out.println(myNumbers[i][j]);
+            }
+        }
     }
 }
