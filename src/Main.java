@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        ArrayTask arrayTask = new ArrayTask();
+
+        arrayTask.arr1ToArr2();
+
         //============ Hello world ============//
         System.out.println("Hello world!");
 
